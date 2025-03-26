@@ -11,8 +11,7 @@ const projects = [
     title: "Eatsy",
     description:
       "Eatsy is a modern food delivery platform that offers a diverse range of delicious and healthy meal options. Built with a focus on user experience, it features an intuitive interface for browsing recipes, ordering food, and tracking deliveries.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/project1-M0HsNtf2XvcZ8RaIXl7qqYrzW4xyze.png",
+    image: "/images/project1.png",
     tech: ["React", "Next.js", "Tailwind CSS", "Node.js"],
     reverse: false,
   },
@@ -20,7 +19,7 @@ const projects = [
     title: "Ebook Store",
     description:
       "EbookStore is an online store where you can buy books. EbookStore often offer a wide range of genres and categories, including fiction, non-fiction, educational, and self-help books.",
-    image: "/placeholder.svg",
+    image: "/images/project2.png",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     reverse: true,
   },
@@ -44,14 +43,15 @@ export function Projects() {
                 project.reverse ? "md:flex-row-reverse" : "md:flex-row"
               } gap-8 items-center`}
             >
-              <div className="flex-1 relative overflow-hidden rounded-lg">
+              <div className="flex-1 relative overflow-hidden rounded-lg h-[300px]">
                 <div
-                  className="relative h-[300px] transition-transform duration-[6s] ease-in-out"
+                  className="relative w-full h-[1000px]"
                   style={{
                     transform:
                       hoveredImage === index
                         ? "translateY(-70%)"
                         : "translateY(0)",
+                    transition: "transform 6s ease-in-out",
                   }}
                   onMouseEnter={() => setHoveredImage(index)}
                   onMouseLeave={() => setHoveredImage(null)}
@@ -60,7 +60,9 @@ export function Projects() {
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                   />
                 </div>
               </div>

@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -12,10 +12,10 @@ export function Nav() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-6 h-28 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-6 h-20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex-shrink-0">
         <Link href="/">
-          <div className="relative mt-12 w-48 h-24">
+          <div className="relative mt-16 w-48 h-24">
             <Image
               src="/images/nav-logo.png"
               alt="Logo"
@@ -40,7 +40,7 @@ export function Nav() {
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } md:flex absolute md:relative top-28 md:top-0 left-0 right-0 bg-background md:bg-transparent p-4 md:p-0`}
+        } md:flex absolute md:relative top-20 md:top-0 left-0 right-0 bg-background md:bg-transparent p-4 md:p-0`}
       >
         <ul className="flex flex-col md:flex-row items-center gap-6 w-full md:w-auto">
           <li>
@@ -112,7 +112,7 @@ export function Nav() {
               variant="outline"
               className="border-primary text-primary"
             >
-              <Link href="/resume.pdf" target="_blank">
+              <Link href="/files/ZeeshanResume.pdf" target="_blank">
                 Resume
               </Link>
             </Button>
