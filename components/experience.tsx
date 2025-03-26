@@ -15,17 +15,6 @@ export function Experience() {
         "Gained hands-on experience with agile methodologies and project management tools.",
       ],
     },
-    {
-      position: "Freelance Web Developer",
-      company: "Self-employed",
-      duration: "2020 - Present",
-      responsibilities: [
-        "Design and develop responsive websites for various clients.",
-        "Implement custom features and integrations based on client requirements.",
-        "Provide ongoing maintenance and support for existing websites.",
-        "Collaborate with clients to ensure project goals are met and deadlines are achieved.",
-      ],
-    },
   ];
 
   return (

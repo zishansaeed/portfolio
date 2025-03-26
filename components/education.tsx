@@ -10,8 +10,10 @@ export function Education() {
       location: "Northampton, United Kingdom",
       duration: "2024 - Present",
       achievements: [
-        "Focused on software development, algorithms, and data structures",
-        "Completed capstone project on AI-driven recommendation systems",
+        "Studied Databases and data management systems",
+        "Completed Visual Object Software Development using Java",
+        "Learned Mobile Device Software Development for cross-platform applications",
+        "Mastered Internet Programming and web engineering techniques",
       ],
     },
     {
@@ -20,8 +22,11 @@ export function Education() {
       location: "Taxila, Pakistan",
       duration: "2018 - 2022",
       achievements: [
-        "Focused on software development, algorithms, and data structures",
-        "Completed capstone project on AI-driven recommendation systems",
+        "Advanced coursework in Software Architecture Design, Requirements Engineering, and Software Verification & Validation",
+        "Completed specialized courses in Web Engineering, Mobile Application Development, and Database Systems",
+        "Developed expertise in Object-Oriented Programming, Data Structures & Algorithms, and Software Testing",
+        "Gained practical experience with Machine Learning, Data Mining, and Artificial Intelligence",
+        "Successfully completed a comprehensive Design Project in the final year",
       ],
     },
   ];
@@ -50,7 +55,7 @@ export function Education() {
               <div className="mt-4">
                 <h4 className="font-semibold mb-2 flex items-center">
                   <Award className="w-4 h-4 mr-2" />
-                  Key Achievements
+                  Key Courses & Achievements
                 </h4>
                 <ul className="list-disc list-inside space-y-1">
                   {edu.achievements.map((achievement, idx) => (
